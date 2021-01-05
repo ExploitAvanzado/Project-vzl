@@ -1,28 +1,14 @@
 # -*- coding: utf-8 -*-
-#!/usr/bin/python
-import sys
-import os
-import time
 import socket
-import random
-#Code Time
-from datetime import datetime
-now = datetime.now()
-hour = now.hour
-minute = now.minute
-day = now.day
-month = now.month
-year = now.year
-##############
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-bytes = random._urandom(1490)
-############# 
 import socks
 import threading
+import random
 import re
 import urllib.request
+import os
+import sys
 from bs4 import BeautifulSoup
-
+import time
 
 try: 
 	from scapy.all import * 
